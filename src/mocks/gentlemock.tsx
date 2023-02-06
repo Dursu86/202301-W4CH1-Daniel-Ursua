@@ -1,4 +1,6 @@
-export const gentlemock = [
+import { gentleStructure } from "../components/gentlemen/gentleman";
+
+export const gentlemock: gentleStructure[] = [
   {
     id: 1,
     name: "Bertin Osborne",
