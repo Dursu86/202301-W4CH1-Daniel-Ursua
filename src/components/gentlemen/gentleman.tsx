@@ -1,23 +1,19 @@
 export type gentleStructure = {
-  id: number;
   name: string;
   status: string;
   profession: string;
   picture: string;
   twitter: string;
   alternativeText: string;
-  selected: boolean;
 };
 
-export function gentleman({
-  id,
+export function Gentleman({
   name,
   status,
   profession,
   picture,
   twitter,
   alternativeText,
-  selected,
 }: gentleStructure) {
   return (
     <li className="gentleman">
