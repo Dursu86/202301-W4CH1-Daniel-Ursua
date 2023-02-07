@@ -9,8 +9,9 @@ function App() {
     <div className="App">
       <Header />
       <Button />
-      {gentlemock.map((elem) => (
+      {gentlemock.map((elem, i) => (
         <Gentleman
+          key={i}
           name={elem.name}
           status={elem.status}
           profession={elem.profession}
