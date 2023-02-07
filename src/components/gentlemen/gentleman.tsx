@@ -1,17 +1,15 @@
 export type gentleStructure = {
-  key: string;
-  id: number;
+  id?: number;
   name: string;
   status: string;
   profession: string;
   picture: string;
   twitter: string;
   alternativeText: string;
-  selected: boolean;
+  selected?: boolean;
 };
 
 export function Gentleman({
-  key,
   id,
   name,
   status,
