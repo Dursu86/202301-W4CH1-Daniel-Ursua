@@ -1,4 +1,5 @@
 export type gentleStructure = {
+  key: string;
   id: number;
   name: string;
   status: string;
@@ -10,6 +11,7 @@ export type gentleStructure = {
 };
 
 export function Gentleman({
+  key,
   id,
   name,
   status,
