@@ -1,19 +1,23 @@
 export type gentleStructure = {
+  id: number;
   name: string;
   status: string;
   profession: string;
   picture: string;
   twitter: string;
   alternativeText: string;
+  selected: boolean;
 };
 
 export function Gentleman({
+  id,
   name,
   status,
   profession,
   picture,
   twitter,
   alternativeText,
+  selected,
 }: gentleStructure) {
   return (
     <li className="gentleman">
@@ -26,7 +30,7 @@ export function Gentleman({
         <span className="gentleman__initial">F</span>
       </div>
       <div className="gentleman__data-container">
-        <h2 className="gentleman__name">{name}</h2>
+        <p className="gentleman__name">{name}</p>
         <ul className="gentleman__data-list">
           <li className="gentleman__data">
             <span className="gentleman__data-label">Profession:</span>
